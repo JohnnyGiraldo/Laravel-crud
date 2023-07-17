@@ -85,6 +85,7 @@ class ClientController extends Controller
     {
         $request->validate([
             'name' => 'required|max:15',
+            
             'due' => 'required|gte:1'
         ]);
 
